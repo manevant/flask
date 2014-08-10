@@ -10,7 +10,7 @@ app.config.from_object('config')
 db = SQLAlchemy(app)
 lm = LoginManager()
 lm.init_app(app)
-lm.login_view = 'login'
+lm.login_view = 'login2' #define what func handle login in views.py
 oid = OpenID(app, os.path.join(basedir, 'tmp'))
 
 print '\n' + "*"* 30 + '\n********SERVER RESTART********\n'+ '*'* 30 + '\n'
